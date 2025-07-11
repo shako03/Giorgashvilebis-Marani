@@ -1,11 +1,24 @@
+<header>
+  <nav class="navbar">
+    <button class="burger" (click)="toggleMenu()">&#9776;</button>
 
-
-
-<nav>
-      <ul>
-
-            <li><a routerLink="/home">home</a></li>
-            <li><a routerLink="/about">about</a></li>
-
+    <div [class.active]="menuOpen" class="nav-sections">
+      <ul class="nav-left">
+        <li><a routerLink="/home">მთავარი გვერდი</a></li>
+        <li><a routerLink="/about">ჩვენს შესახებ</a></li>
+        <li><a routerLink="/contact">ისტორია</a></li>
       </ul>
-</nav>
+
+      <div class="logo">
+        <img
+          src="https://scontent.ftbs5-3.fna.fbcdn.net/v/t1.15752-9/518127447_704018642515056_5946360379765340521_n.jpg?...">
+      </div>
+
+      <ul class="nav-right">
+        <li><a>პროდუქცია</a></li>
+        <li><a>კონტაქტი</a></li>
+        <li><a>კალათა</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
