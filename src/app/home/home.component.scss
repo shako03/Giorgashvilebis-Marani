@@ -4,10 +4,10 @@ main {
 
   .div-img {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content:start;
     align-items: center;
     flex-wrap: wrap;
 
@@ -18,12 +18,12 @@ main {
   }
 
   .dddiv {
-    width: 200px;
-    height: 150px;
-    background-color: rgba(255, 0, 0, 0.5); // ნახევრად გამჭვირვალე წითელი
+    width: 550px;
+    background-color: rgba(92, 92, 92, 0); // ნახევრად გამჭვირვალე წითელი
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
   }
 }
 
