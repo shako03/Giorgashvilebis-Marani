@@ -1,0 +1,116 @@
+.smoothOperator {
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+
+  .left-main {
+    width: 40%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .left {
+      border-radius: 5px;
+      width: 90%;
+      height: 50vh;
+      background-color: bisque;
+      background-image: url(https://winerybediani.ge/wp-content/themes/bediani/themes/images/contact.jpg);
+      background-position: center;
+      background-size: cover;
+      padding: 15px;
+    }
+  }
+
+  .right-main {
+    width: 60%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .right {
+      border-radius: 5px;
+      width: 90%;
+      height: 50vh;
+      background-color: bisque;
+      overflow-y: scroll; 
+      padding: 15px;
+
+      
+      scrollbar-width: thin;
+      scrollbar-color: #888 transparent;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 950px) {
+  .smoothOperator {
+    flex-direction: column;
+
+    .left-main,
+    .right-main {
+      width: 100%;
+      height: auto;
+      padding: 10px 0;
+
+      .left,
+      .right {
+        width: 90%;
+        height: 45vh;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .smoothOperator {
+    .left-main,
+    .right-main {
+      .left,
+      .right {
+        width: 95%;
+        height: 40vh;
+      }
+    }
+
+    .right-main {
+      .right {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .smoothOperator {
+    .left-main,
+    .right-main {
+      .left,
+      .right {
+        width: 100%;
+        height: 35vh;
+      }
+    }
+
+    .right-main {
+      .right {
+        font-size: 13px;
+      }
+    }
+  }
+}
