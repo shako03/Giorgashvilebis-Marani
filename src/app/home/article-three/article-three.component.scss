@@ -1,0 +1,91 @@
+.parent {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+
+  .child {
+    position: relative;
+    width: 23%;
+    height: 49vh;
+    overflow: hidden;
+    cursor: pointer;
+
+    .img {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      border-radius: 8px;
+      z-index: 10;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+   
+    button.see-more {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 20;
+      opacity: 0;
+      pointer-events: none;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover button.see-more {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    &:hover .img img {
+      transform: scale(1.05); 
+    }
+  }
+}
+
+
+.hh2{
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .hh2-child{
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+
+}
