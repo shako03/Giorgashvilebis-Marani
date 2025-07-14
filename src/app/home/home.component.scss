@@ -1,6 +1,7 @@
 main {
       width: 100%;
       background-color: rgba(124, 124, 124, 0.007);
+      height: 70vh;
 
       .div-img {
             width: 100%;
@@ -11,16 +12,16 @@ main {
             align-items: center;
             flex-wrap: wrap;
 
-            background-image: url('/wine/ChatGPT Image Jul 11, 2025, 03_56_29 PM.png');
+            background-image: url('/wine/logo.png');
             background-size: cover;
-            background-position: center;
+            background-position: top;
             background-repeat: no-repeat;
 
             .dddiv {
                   width: 550px;
                   height: 500px;
                   background-position: center;
-                  background-color: rgba(92, 92, 92, 0); // ნახევრად გამჭვირვალე წითელი
+                  background-color: rgba(92, 92, 92, 0); 
                   margin: 10px;
                   border-radius: 10px;
                   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -33,7 +34,7 @@ main {
 
 @media (max-width: 950px) {
       main .div-img {
-            height: 50vh;
+            
       }
 
       .dddiv {

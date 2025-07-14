@@ -8,6 +8,7 @@
 
   .left-side {
     height: 42vh;
+    width: 100%;
 
 
     img {
@@ -21,6 +22,7 @@
 
   .right-side {
     height: 42vh;
+    width: 100%;
 
 
     img {
@@ -56,7 +58,30 @@
     .right-side {
       height: auto;
     }
+
+    .hh2 {
+
+
+      .top-text {
+        width: auto;
+        height: auto;
+
+      }
+    }
   }
 
 
+}
+
+.hh2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .top-text {
+    width: 64%;
+    height: 7vh;
+
+  }
 }
