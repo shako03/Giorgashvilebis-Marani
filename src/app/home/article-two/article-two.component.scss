@@ -49,3 +49,9 @@
   cursor: pointer;           
 }
 
+@media (max-width: 950px) {
+      .art-main{
+            display: flex;
+            flex-direction: column;
+      }
+}
