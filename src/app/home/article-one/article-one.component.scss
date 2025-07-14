@@ -5,7 +5,7 @@
 
   .left-main {
     width: 40%;
-    height: 55vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@
     .left {
       border-radius: 5px;
       width: 90%;
-      height: 50vh;
+      height: 40vh;
       background-color: bisque;
       background-image: url(https://winerybediani.ge/wp-content/themes/bediani/themes/images/contact.jpg);
       background-position: center;
@@ -24,7 +24,7 @@
 
   .right-main {
     width: 60%;
-    height: 55vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,7 @@
     .right {
       border-radius: 5px;
       width: 90%;
-      height: 50vh;
+      height: 40vh;
       background-color: bisque;
       overflow-y: scroll; 
       padding: 15px;
@@ -113,4 +113,19 @@
       }
     }
   }
+}
+
+.hh2{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .hh2-child{
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+  }
+
 }
