@@ -4,15 +4,15 @@
   align-items: center;
   justify-content: space-around;
   gap: 10px; 
-  background-color: rgba(144, 147, 150, 0.336);
+
 
   .left-side,
   .right-side {
-    height: 49vh;
+    height: 59vh;
     flex: 1 1 45%; 
     max-width: 45%;
     overflow: hidden; 
-    position: relative;
+
 
     img {
       width: 100%;
@@ -24,7 +24,7 @@
   }
 }
 
-/* Responsive */
+
 @media (max-width: 950px) {
   .art-main {
     flex-direction: column;
