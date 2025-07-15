@@ -1,0 +1,75 @@
+main {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+}
+
+.parent {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px 30px;
+      width: 60%;
+      border: 1px solid red;
+}
+
+.divv {
+      width: 290px;
+      margin-top: 20px;
+}
+
+.card {
+      background: #b4b4b40e;
+      border: 1px solid rgba(0, 0, 0, 0.219);
+      border-radius: 5px;
+      padding: 10px;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.3s;
+
+
+
+
+
+      img {
+            width: 100%;
+            object-fit: contain;
+
+      }
+
+      h4 {
+            margin: 10px 0 5px;
+            font-size: 16px;
+            color: #222;
+      }
+
+
+      .price {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #8B0000;
+            margin: 8px 0 0 0;
+            letter-spacing: 0.05em;
+            font-family: 'Georgia', serif;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+            user-select: none;
+      }
+
+      h4 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333333;
+            margin: 10px 0 5px 0;
+            letter-spacing: 0.03em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            user-select: text;
+      }
+
+
+
+
+
+}

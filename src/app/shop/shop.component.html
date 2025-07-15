@@ -1,1 +1,11 @@
-<p>shop works!</p>
+<main>
+      <div class="parent">
+            <div class="divv" *ngFor="let wine of wines">
+                  <div class="card">
+                        <img src="{{wine.img}}" alt="" srcset="">
+                        <h4>{{wine.name}}</h4>
+                        <p class="price">{{wine.price}}.00₾</p>
+                  </div>
+            </div>
+      </div>
+</main>
