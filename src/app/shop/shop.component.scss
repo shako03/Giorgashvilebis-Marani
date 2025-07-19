@@ -168,3 +168,28 @@ p{
 
 }
 }
+
+
+.details-btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #3c00aa, #ff0000);
+  color: white;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(126, 63, 242, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.details-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(145, 13, 42, 0.5);
+  background: linear-gradient(135deg, #0033db, #000000);
+}

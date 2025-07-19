@@ -1,0 +1,133 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9fbff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.wine-details-card-horizontal {
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  gap: 30px;
+  padding: 28px;
+  user-select: none;
+
+  .image-wrapper {
+    flex: 0 0 320px;
+    height: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+      user-select: none;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .info-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #2a2a42;
+
+    h2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #444466;
+    }
+
+    .status {
+      margin-top: 28px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      padding: 10px 32px;
+      border-radius: 36px;
+      display: inline-block;
+      text-transform: uppercase;
+      user-select: none;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &.in-stock {
+        background: linear-gradient(45deg, #43d97b, #2e8b57);
+        color: #e7f9ee;
+        box-shadow: 0 8px 28px #2e8b5799;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+      }
+
+      &.out-of-stock {
+        background: linear-gradient(45deg, #f66565, #c53030);
+        color: #fdeaea;
+        box-shadow: 0 8px 28px #c5303099;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .wine-details-card-horizontal {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+    gap: 24px;
+
+    .image-wrapper {
+      width: 100%;
+      height: 280px;
+
+      img {
+        width: 100%;
+        height: 280px;
+        border-radius: 16px;
+      }
+    }
+
+    .info-wrapper {
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .status {
+        font-size: 1.25rem;
+        padding: 8px 28px;
+        margin-top: 22px;
+      }
+    }
+  }
+}

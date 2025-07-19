@@ -1,1 +1,18 @@
-<p>wine-details works!</p>
+<div *ngIf="wine" class="wine-details-card-horizontal">
+  <div class="image-wrapper">
+    <img [src]="wine.img" alt="{{ wine.name }}" draggable="false" />
+  </div>
+  <div class="info-wrapper">
+    <h2>{{ wine.name }}</h2>
+    <p>ტიპი: {{ wine.type }}</p>
+    <p>წელი: {{ wine.year }}</p>
+    <p>ფასი: {{ wine.price }}₾</p>
+    <p>წარმოშობა: {{ wine.origin }}</p>
+    <p
+      class="status"
+      [ngClass]="wine.isAvailable ? 'in-stock' : 'out-of-stock'"
+    >
+      {{ wine.isAvailable ? 'მარაგშია' : 'ამოწურულია' }}
+    </p>
+  </div>
+</div>

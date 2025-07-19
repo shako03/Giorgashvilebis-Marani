@@ -21,8 +21,8 @@
                   <div class="card">
                         <img [src]="wine.img" alt="">
                         <h4>{{ wine.name }}</h4>
-                        <p class="price">{{ wine.price }}.00₾</p>
-                        <!-- <button [routerLink]="['/wine', wine.id]">დეტალურად</button> -->
+                        <p class="price">{{ wine.price }}.00₾</p>                        
+                        <button class="details-btn" [routerLink]="['/wine-details', wine.id]">See Details</button>
                   </div>
             </div>
       </div>
