@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class ShopComponent {
 
+  selectedType: string | null = null;
+  
   wines: wine[] = [
     {
       id: 1,
@@ -74,5 +76,15 @@ export class ShopComponent {
 
   ];
 
+    get filteredWines(): wine[] {
+    if (!this.selectedType) {
+      return this.wines;
+    }
+    return this.wines.filter(wine => wine.type === this.selectedType);
+  }
+
+  setFilter(type: string | null) {
+    this.selectedType = type;
+  }
 
 }

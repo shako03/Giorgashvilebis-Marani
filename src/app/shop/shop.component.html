@@ -1,21 +1,22 @@
 <main>
-
       <aside>
             <div class="mainDivSide">
                   <div class="parent2">
-                        <p>წითელი</p>
-                        <p>თეთრი</p>
-                        <p>შავი</p>
+                        <p *ngFor="let type of ['ყველა', 'წითელი', 'თეთრი', 'შავი']"
+                              (click)="setFilter(type === 'ყველა' ? null : type)"
+                              [class.active]="selectedType === type || (type === 'ყველა' && !selectedType)">
+                              {{ type }}
+                        </p>
                   </div>
             </div>
       </aside>
 
       <div class="parent">
-            <div class="divv" *ngFor="let wine of wines">
+            <div class="divv" *ngFor="let wine of filteredWines">
                   <div class="card">
-                        <img src="{{wine.img}}" alt="" srcset="">
-                        <h4>{{wine.name}}</h4>
-                        <p class="price">{{wine.price}}.00₾</p>
+                        <img [src]="wine.img" alt="">
+                        <h4>{{ wine.name }}</h4>
+                        <p class="price">{{ wine.price }}.00₾</p>
                   </div>
             </div>
       </div>
