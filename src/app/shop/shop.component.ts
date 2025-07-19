@@ -20,7 +20,7 @@ export class ShopComponent {
     {
       id: 1,
       name: 'საფერავი',
-      type: 'წითელი',
+      type: 'შავი',
       year: 2020,
       price: 25,
       isAvailable: true,
@@ -80,14 +80,15 @@ export class ShopComponent {
 
   ];
 
-get filteredWines(): wine[] {
-  return this.wines.filter(wine => {
-    const byType = !this.selectedType || wine.type === this.selectedType;
-    const byMin = this.minPrice == null || wine.price >= this.minPrice;
-    const byMax = this.maxPrice == null || wine.price <= this.maxPrice;
-    return byType && byMin && byMax;
-  });
-}
+  get filteredWines(): wine[] {
+    return this.wines.filter(wine => {
+      const byType = !this.selectedType || wine.type === this.selectedType;
+      const byMin = this.minPrice == null || wine.price! >= this.minPrice;
+      const byMax = this.maxPrice == null || wine.price! <= this.maxPrice;
+
+      return byType && byMin && byMax;
+    });
+  }
 
   setFilter(type: string | null) {
     this.selectedType = type;
