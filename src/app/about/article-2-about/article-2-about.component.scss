@@ -1,0 +1,84 @@
+article {
+  width: 100%;
+  background-color: #f8f5f0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+
+  .parent {
+    width: 85%;
+    display: flex;
+    gap: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+
+    .left-side {
+      width: 45%;
+      background-image: url('https://scontent.ftbs5-3.fna.fbcdn.net/v/t1.15752-9/519485267_1324453659259581_1001596763183616819_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_ohc=lfmUinZvoZMQ7kNvwG3rxhi&_nc_oc=AdnG1lcPU9qswMuiI_QwwqTcJ7Xql5SDVWDVRw67Bcn9E7HZ_QqzVMwgo4whRJHa21g&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&oh=03_Q7cD2wH5gvr7q9bDW2t-nGbYwF8ONY_qvaEBanq33ZsBaUKL3A&oe=68A2FADB');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 450px;
+    }
+
+    .right-side {
+      width: 55%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Segoe UI', 'Noto Serif Georgian', 'Sylfaen', sans-serif;
+      color: #3e2e2e;
+
+      .story-section {
+        h2 {
+          font-size: 28px;
+          margin-bottom: 20px;
+          color: #7b1e1e;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 17px;
+          line-height: 1.7;
+          margin-bottom: 15px;
+          text-align: justify;
+
+          &:last-child {
+            font-style: italic;
+            color: #5b3c3c;
+          }
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    .parent {
+      flex-direction: column;
+
+      .left-side,
+      .right-side {
+        width: 100%;
+      }
+
+      .right-side {
+        padding: 30px 20px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .right-side .story-section h2 {
+      font-size: 22px;
+    }
+
+    .right-side .story-section p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+  }
+}
