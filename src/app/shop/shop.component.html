@@ -8,6 +8,11 @@
                               {{ type }}
                         </p>
                   </div>
+                  <div style="margin-top: 20px;">
+                        <label>ფასის ფილტრი:</label>
+                        <input type="number" placeholder="მინ." [(ngModel)]="minPrice">
+                        <input type="number" placeholder="მაქს." [(ngModel)]="maxPrice">
+                  </div>
             </div>
       </aside>
 
