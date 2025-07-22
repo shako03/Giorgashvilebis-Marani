@@ -20,8 +20,9 @@ main {
 }
 
 .card {
-  background: #b4b4b40e;
-  border: 1px solid rgba(0, 0, 0, 0.219);
+  // background: #b4b4b40e;
+  // border: 1px solid rgba(0, 0, 0, 0.219);
+  box-shadow: 2px 2px rgba(143, 143, 143, 0.466);
   border-radius: 5px;
   padding: 10px;
   height: 100%;
@@ -152,9 +153,10 @@ p {
 
 @media (max-width: 480px) {
 
-  aside{
+  aside {
     width: 100%
   }
+
   .mainDivSide {
 
     padding: 15px;
@@ -168,7 +170,8 @@ p {
   .price-filter input {
     max-width: 100%;
   }
-  .parent2{
+
+  .parent2 {
     display: flex;
     width: 100%;
   }
@@ -179,40 +182,42 @@ p {
     width: 100%;
 
   }
-  main{
+
+  main {
     display: flex;
     flex-direction: column;
   }
-  .divv{
+
+  .divv {
     width: auto;
   }
+
   .card {
     height: auto;
     width: 120px;
   }
+  .details-btn{
+    padding: 0;
+  }
+  .details-btn{
+  height: 50%;
+  width: auto;
+  }
+
+
 }
 
 
 .details-btn {
-  padding: 10px 25px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #3c00aa, #ff0000);
-  color: white;
-  font-weight: 500;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(126, 63, 242, 0.3);
-  transition: all 0.3s ease;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+width: 70%;
+height: 37px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+background-color: wheat;
 }
 
 .details-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(145, 13, 42, 0.5);
-  background: linear-gradient(135deg, #0033db, #000000);
+background-color: #555;
+color: white;
 }

@@ -3,10 +3,11 @@ import { wine } from '../models/wine';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { LOGoComponent } from "./logo/logo.component";
 
 @Component({
   selector: 'app-shop',
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [CommonModule, FormsModule, RouterModule, LOGoComponent],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss'
 })
