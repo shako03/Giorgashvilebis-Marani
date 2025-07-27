@@ -3,15 +3,24 @@
   display: flex;
   justify-content: center;
   background-color: #f3f0eb;
-  padding: 60px 0;
+  
 }
 
+article{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240912/pngtree-golden-brushed-metal-texture-background-high-resolution-abstract-metallic-pattern-image_16168681.jpg');
+
+}
+
+
 .parent {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 90%;
   display: flex;
   gap: 24px;
-
   overflow: hidden;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
@@ -24,7 +33,7 @@
   background-image: url('https://scontent.ftbs5-3.fna.fbcdn.net/v/t1.15752-9/518816341_1432750511102236_4244588919277208038_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_ohc=us3ue1kNGqoQ7kNvwF8mso-&_nc_oc=AdmPNFLMstuM58LTx9GbK3upXg3Ym2ZxJyQoeMmj7XZockF28NrieFmz9lBbLB9AZYk&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&oh=03_Q7cD2wFgC_e15vfv67WOKgpig0CQJYSSTS_bciRjRkrawsRGIQ&oe=68A2D970');
   background-size: cover;
   background-position: center;
-  min-height: 460px;
+
 }
 
 .right-side {
@@ -61,12 +70,13 @@
 
 
 @media (max-width: 1024px) {
-  article{
+  article {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .parent {
     flex-direction: column;
   }

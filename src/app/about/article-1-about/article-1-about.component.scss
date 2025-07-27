@@ -6,12 +6,20 @@
   padding: 60px 0;
 }
 
+article{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240912/pngtree-golden-brushed-metal-texture-background-high-resolution-abstract-metallic-pattern-image_16168681.jpg');
+}
+
+
 .parent {
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 90%;
   display: flex;
   gap: 24px;
-
   overflow: hidden;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
@@ -21,10 +29,10 @@
 
 .left-side {
   flex: 1;
-  background-image: url('https://scontent.ftbs5-3.fna.fbcdn.net/v/t1.15752-9/518816341_1432750511102236_4244588919277208038_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_ohc=us3ue1kNGqoQ7kNvwF8mso-&_nc_oc=AdmPNFLMstuM58LTx9GbK3upXg3Ym2ZxJyQoeMmj7XZockF28NrieFmz9lBbLB9AZYk&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&oh=03_Q7cD2wFgC_e15vfv67WOKgpig0CQJYSSTS_bciRjRkrawsRGIQ&oe=68A2D970');
+  background-image: url('https://scontent.ftbs5-3.fna.fbcdn.net/v/t1.15752-9/516750466_1453285635680180_4467410819064672069_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEysA2R39US9211f6f3paLqD_Q4Ukjo5wUP9DhSSOjnBW4Nm2q0T6DpbydO7kONDm5pMfQt9zWsVQSymqm6RHFS&_nc_ohc=R15Qpsscq3gQ7kNvwE9SbQf&_nc_oc=AdmxvVBYakPSabpVjXHerQPdj-TkWfySaDPqYQYWftfs3Xc9OaS4dHfN_FEHQ-0ina0&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&oh=03_Q7cD2wETCWQWbqOPkbEiVCBvlOlV-nXWOQEEX5ATMPdPn2-Q7A&oe=68AD54A8');
   background-size: cover;
   background-position: center;
-  min-height: 460px;
+
 }
 
 .right-side {
@@ -61,12 +69,13 @@
 
 
 @media (max-width: 1024px) {
-  article{
+  article {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .parent {
     flex-direction: column;
   }
