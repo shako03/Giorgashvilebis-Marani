@@ -1,50 +1,57 @@
 main {
-      width: 100%;
-      background-color: rgba(124, 124, 124, 0.007);
-      height: 70vh;
-
-      .div-img {
-            width: 100%;
-            height: 70vh;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            flex-wrap: wrap;
-            background-image: url('/wine/logo.png');
-            background-size: cover;
-            background-position: top;
-            background-repeat: no-repeat;
-            .rec{
-                  width: 700px;
-                  height: 500px;
-                  font-size: 27px;
-                  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                  
-            }
-
-
-      }
-
+  width: 100%;
+  height: 70vh;
+  margin: 0;
+  padding: 0;
 }
 
+.div-img {
+  width: 100%;
+  height: 70vh;
+  background-image: url('/wine/logo.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;      
+  padding-right: 20px;       
+  box-sizing: border-box;
+}
+
+.rec {
+  max-width: 700px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 27px;
+  height: auto;
+  line-height: 1.2;
+}
+
+
 @media (max-width: 950px) {
-
-
-
-
-      main .dddiv {
-            width: 120px;
-            height: 100px;
+      body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
       }
-                  .rec{
-                  width: auto;
-                  height: auto;
-                  font-size: 12px;
-                  h1{
-                        font-size: 100%;
-                        text-align: center;
-                  }
-                  
-            }
+
+  main {
+    height: auto;
+  }
+
+  .div-img {
+height: 30vh;               
+    background-size: contain;      
+    background-position: center;
+    justify-content: center;      
+    padding-right: 0;
+  }
+
+  .rec {
+    max-width: 90%;
+    font-size: 14px;
+    text-align: center;
+  }
 }
