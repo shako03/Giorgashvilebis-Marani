@@ -93,12 +93,7 @@ p {
   gap: 25px;
 }
 
-.parent2 {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-}
+
 
 .parent2 p {
   cursor: pointer;
@@ -156,6 +151,12 @@ p {
     width: 100%
   }
 
+  .parent2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
   .mainDivSide {
 
     padding: 15px;
@@ -163,7 +164,7 @@ p {
   }
 
   .parent2 p {
-    flex: 1 1 45%;
+    flex: 1 1 50%;
   }
 
   .price-filter input {
@@ -173,6 +174,9 @@ p {
   .parent2 {
     display: flex;
     width: 100%;
+    p{
+      width: 100%;
+    }
   }
 
   .parent {

@@ -27,7 +27,7 @@ export class ShopComponent {
       price: 25,
       isAvailable: true,
       origin: 'კახეთი',
-      img: "https://cgw.ge/wp-content/uploads/2022/12/saperavi-min.png"
+      img: "https://ktwshop.ge/660-large_default/%E1%83%A1%E1%83%90%E1%83%A4%E1%83%94%E1%83%A0%E1%83%90%E1%83%95%E1%83%98.jpg"
     },
     {
       id: 2,
@@ -57,7 +57,7 @@ export class ShopComponent {
       price: 22,
       isAvailable: true,
       origin: 'კახეთი',
-      img: "https://cgw.ge/wp-content/uploads/2022/12/kisi-min.png"
+      img: "https://ktwshop.ge/853-large_default/%E1%83%A5%E1%83%98%E1%83%A1%E1%83%98.jpg"
     },
     {
       id: 5,
@@ -107,7 +107,7 @@ export class ShopComponent {
       price: 35,
       isAvailable: true,
       origin: 'კახეთი',
-      img: "https://alcorium-store.ge/images/detailed/3/%E1%83%97%E1%83%94%E1%83%9A%E1%83%98%E1%83%90%E1%83%9C%E1%83%98_%E1%83%95%E1%83%94%E1%83%9A%E1%83%98_%E1%83%A1%E1%83%90%E1%83%A4%E1%83%94%E1%83%A0%E1%83%90%E1%83%95%E1%83%98_0.75%E1%83%9A.png"
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2_nDGx2wnwasUUiDsKD9q1q8Kz2KL1m4REQ&s"
     }
   ];
 
