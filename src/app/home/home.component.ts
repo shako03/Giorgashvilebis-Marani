@@ -4,11 +4,10 @@ import { ArticleTwoComponent } from './article-two/article-two.component';
 import { ArticleThreeComponent } from "./article-three/article-three.component";
 import { CommonModule } from '@angular/common';
 import { SliderComponent } from "./slider/slider.component";
-import { BoberNiggerComponent } from '../bober-nigger/bober-nigger.component';
 
 @Component({
   selector: 'app-home',
-  imports: [ArticleOneComponent, ArticleTwoComponent, ArticleThreeComponent, CommonModule, SliderComponent, BoberNiggerComponent],
+  imports: [ArticleOneComponent, ArticleTwoComponent, ArticleThreeComponent, CommonModule, SliderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
