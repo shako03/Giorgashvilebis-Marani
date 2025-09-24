@@ -122,6 +122,7 @@ export class ShopComponent {
     });
   }
 
+  
   setFilter(type: string | null) {
     this.selectedType = type;
   }
