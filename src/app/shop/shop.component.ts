@@ -112,6 +112,7 @@ export class ShopComponent {
   ];
 
   
+  
   get filteredWines(): wine[] {
     return this.wines.filter(wine => {
       const byType = !this.selectedType || wine.type === this.selectedType;
