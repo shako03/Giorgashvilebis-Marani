@@ -1,12 +1,20 @@
-
-
-<div class="popup" *ngIf="showPopup">
-  <div class="popup-content">
-    <h3>Welcome!</h3>
-    <p>This pop-up appeared after 2 seconds.</p>
-    <button (click)="closePopup()">Close</button>
-  </div>
-</div>
+<body>
+      <div class="popup" *ngIf="showPopup">
+            <div class="popup-content">
+                  <h3 class="h3-hard" style="font-family: 'Courier New', Courier, monospace; font-size: 37px; color: rgb(255, 0, 0);">
+                        Giorgashvilebis Marani </h3>
+                  <p style="color: rgb(224, 185, 255); font-size: 25px; font-style: oblique;">🍇 კახური ღვინოების
+                        მოყვარულებო!
+                        გსურთ საუკეთესო სურნელი და გემო თქვენს ჭიქაში?
+                        გამოიწერეთ სიახლეებისათვის და მიღეთ ექსკლუზიური შეთავაზებები!</p>
+                  <button (click)="closePopup()"
+                        style="background-color: #8B0000; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">
+                        დახურვა
+                  </button>
+            </div>
+            <div class="for-bg-img"></div>
+      </div>
+</body>
 
 
 <app-slider> </app-slider>
@@ -28,5 +36,3 @@
 <app-article-two> </app-article-two>
 
 <app-article-three> </app-article-three>
-
-
