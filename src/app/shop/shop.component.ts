@@ -202,5 +202,4 @@ export class ShopComponent {
     this.wineId = Number(this.route.snapshot.paramMap.get('id'));
     this.wine = this.wines.find(w => w.id === this.wineId);
   }
-
 }
