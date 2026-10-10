@@ -22,5 +22,4 @@ export const routes: Routes = [
             loadComponent: () => import('./wine-details/wine-details.component').then(m => m.WineDetailsComponent)
       }
 
-
 ];
